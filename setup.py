@@ -25,5 +25,5 @@ setup(
         "console_scripts": [
             "asset_behave_api=app_b.main:main"
         ]},
-    package_data={'' : [join(ROOT, 'app_b/features/excluir_jogo.feature')]}
+    package_data={'' : [join(ROOT, 'app_b/features/schema'),join(ROOT, 'app_b/features/stage')]}
 )
