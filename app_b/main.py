@@ -1,10 +1,10 @@
-import os
+import subprocess
 from os.path import dirname, abspath
 
 root ="behave " + '"' + dirname(abspath(__file__)) + '\\' + 'features' + '"'
 
 def main():
-    os.system(root)
+    subprocess.run(root)
 
 
 if __name__ == '__main__':

@@ -10,12 +10,7 @@ def step_impl(context, endpoint):
     "game_link": "teste",
     "game_pht": "teste"
 }
-    context.body = requests.post(endpoint, json=myobj)
-
-@given(u'deve me retornar o status code "{status_code}"')
-def step_impl(context, status_code):
-    assert context.body.status_code == int(status_code),  \
-        'Erro de assert {} != {}'.format(status_code, context.body.status_code)
+    context.body = requests.post(context.stage + endpoint, json=myobj)
 
 @given(u'deve me retornar um body do jogo adicionado')
 def step_impl(context):
