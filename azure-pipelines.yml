@@ -10,8 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python36:
-      python.version: '3.6'
     Python37:
       python.version: '3.7'
 
@@ -38,5 +36,17 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
+    testResultsFormat: 'JUnit'
     testResultsFiles: '/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/app_b/features/reports/TESTS-*.xml'
   condition: succeededOrFailed()
+
+#inputs:
+    #testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest
+    #testResultsFiles: '**/TEST-*.xml' 
+    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+    #mergeTestResults: false # Optional
+    #failTaskOnFailedTests: false # Optional
+    #testRunTitle: # Optional
+    #buildPlatform: # Optional
+    #buildConfiguration: # Optional
+    #publishRunAttachments: true # Optional
