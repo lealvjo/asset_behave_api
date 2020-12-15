@@ -33,6 +33,5 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
     testResultsFiles: '**/TESTS-*.xml'
   condition: succeededOrFailed()
