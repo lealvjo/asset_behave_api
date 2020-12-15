@@ -7,7 +7,7 @@ class ConfigurationEnvironment(object):
     def __init__(self):
         pass
 
-    def get_env(self, stage):
+    def get_stage(self, stage):
         with open(self.get_path('features') + "stage/environment.yml", "r") as f:
             try:
                 self.env = yaml.safe_load(f)

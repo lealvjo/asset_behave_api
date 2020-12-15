@@ -1,11 +1,11 @@
 import os
-from os.path import dirname, abspath
+from app_b.features.util.configuration_environment import ConfigurationEnvironment as ce
 
-root ="behave " + '"' + dirname(abspath(__file__)) + '\\' + 'features\\' + '"'
 
-print(root)
 def main():
-    os.system(root)
+    env = ce()
+    os.chdir(env.get_path("features"))
+    os.system("behave")
 
 
 if __name__ == '__main__':
