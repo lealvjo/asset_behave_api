@@ -27,12 +27,13 @@ steps:
 
 - script: |
     ls
-    behave app_b/features/
+    cd app_b/features/
+    behave
   
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'app_b/features/reports/TESTS-*.xml'
+    testResultsFiles: '**TESTS-*.xml'
   condition: succeededOrFailed()
