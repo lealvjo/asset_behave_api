@@ -37,5 +37,5 @@ steps:
 
 - task: PublishTestResults@1
   inputs:
-    testResultsFiles: 'app_b/features/reports/*.xml'
+    testResultsFiles: 'app_b/features/reports/TESTS-excluir_jogo.xml'
   condition: succeededOrFailed()
