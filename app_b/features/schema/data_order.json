@@ -1,7 +1,7 @@
 {
         "title": "Person",
         "type": "object",
-        "required": [ "id","page_indx", "name", "price", "game_link", "game_pht"],
+        "required": ["page_indx", "name", "price", "game_link", "game_pht"],
         "properties": {
             "id": {
                 "type": "integer"

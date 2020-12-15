@@ -1,3 +1,7 @@
+'''
+This method is called only when generated the package by setup.py
+'''
+
 import os
 from app_b.features.util.configuration_environment import ConfigurationEnvironment as ce
 
@@ -5,7 +9,6 @@ from app_b.features.util.configuration_environment import ConfigurationEnvironme
 def main():
     env = ce()
     os.chdir(env.get_path("features"))
-    os.system("dir")
     os.system("behave")
 
 

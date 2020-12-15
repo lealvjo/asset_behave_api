@@ -12,7 +12,7 @@ def get_extra_requires(path):
 
 setup(
     name='asset_behave_api',
-    version='1.1.0',
+    version='1.1.1',
     packages=find_packages(),
     url='https://github.com/lealvjo/asset_behave_api',
     license='',
