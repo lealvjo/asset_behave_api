@@ -35,7 +35,7 @@ steps:
 
   displayName: 'Run tests'
 
-- task: PublishTestResults@1
+- task: PublishTestResults@2
   inputs:
-    testResultsFiles: '**/TESTS-*.xml'
+    testResultsFiles: '*/TESTS-*.xml'
   condition: succeededOrFailed()
