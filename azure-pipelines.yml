@@ -32,10 +32,12 @@ steps:
 
 - script: |
     asset_behave_api
+    cd ***/
+    ls
 
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: '*/TESTS-*.xml'
+    testResultsFiles: '***/TESTS-*.xml'
   condition: succeededOrFailed()
