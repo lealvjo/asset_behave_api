@@ -4,7 +4,7 @@ Example of how to automate API, using python and behavior-oriented development (
      Framework documentation:
      - https://behave.readthedocs.io/en/latest/
 
-##Importing the project and creat virtual environment project Pycharm
+#Importing the project and creat virtual environment project Pycharm
 
     import the project into git: https://github.com/lealvjo/asset_behave_api.git
     
@@ -13,7 +13,7 @@ Example of how to automate API, using python and behavior-oriented development (
     - [x] Navigate to python interpreter and click on the gear
     - [x] Select add and new environment
     
-##Enabling virtual environment
+#Enabling virtual environment
     
     A virtual environment is a Python environment, so the Python interpreter, libraries and scripts 
     installed in it are isolated from those installed in other virtual environments.
@@ -25,7 +25,7 @@ Example of how to automate API, using python and behavior-oriented development (
     **After this will appear a (venv) before your project, it means that the virtual environment has been enabled**
         Ex: (venv) C:\Users\{user}\PycharmProjects\asset_behave_api\
 
-##Environment  definitions
+#Environment  definitions
 
     The environments are configured in the folder features/stage
         - environment.yml
@@ -43,7 +43,7 @@ Example of how to automate API, using python and behavior-oriented development (
     QA: Wheel pointing to test environment
     
     
-##Installing external packages
+#Installing external packages
 
     Text file, containing a list of items / packages to be installed during pip install.
 
@@ -57,7 +57,7 @@ Example of how to automate API, using python and behavior-oriented development (
     ***The application is at the root /app_b
     
     
-##To generate a new installable package setup.py
+#To generate a new installable package setup.py
 
     Setup.py is a python file, which usually informs you that the module / package you are about to install has been packaged and distributed with Distutils, 
     which is the standard for distributing Python modules. This allows you to easily install Python packages.
@@ -70,7 +70,7 @@ Example of how to automate API, using python and behavior-oriented development (
     - [x] type: pip install --upgrade --force-reinstall dist/asset_behave_api-{version}-py3-none-any.whl
     
 
-##To run the project installed
+#To run the project installed
 
     If installed in any environment to run by calling entry_points.
     
