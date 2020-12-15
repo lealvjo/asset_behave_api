@@ -25,5 +25,6 @@ steps:
     python -m pip install --upgrade pip
     pip install wheel
     pip install -r requirements.txt
-    echo ${VSTS_AGENT_PERFLOG}
+    pip install --upgrade --force-reinstall /home/vsts/work/1/sdist/asset_behave_api-1.1.0-py3-none-any.whl
+
   displayName: 'Install dependencies'
