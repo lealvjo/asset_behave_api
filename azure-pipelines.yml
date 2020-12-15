@@ -32,12 +32,11 @@ steps:
 
 - script: |
     asset_behave_api
-    cd ***/
     ls
 
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: '***/TESTS-*.xml'
+    testResultsFiles: '/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/app_b/features/reports/TESTS-*.xml'
   condition: succeededOrFailed()
