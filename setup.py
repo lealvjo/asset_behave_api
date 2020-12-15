@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from os.path import dirname, abspath, join
 
-ROOT = dirname(abspath(__file__)) + '\\'
+ROOT = dirname(abspath(__file__))
 
 def get_extra_requires(path):
     extra_des = []
