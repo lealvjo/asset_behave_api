@@ -27,7 +27,12 @@ steps:
     python setup.py bdist_wheel
     ls
     pip install --upgrade --force-reinstall dist/asset_behave_api-1.1.0-py3-none-any.whl
-    cd app_b/features
-    ls
-
+    
   displayName: 'Install dependencies'
+
+- script: |
+    asset_behave_api
+
+  displayName: 'Run tests'
+
+  
