@@ -5,7 +5,7 @@ Example of how to automate API, using python and behavior-oriented development (
      - https://behave.readthedocs.io/en/latest/
 
      Application Programming Interface used for testing
-     - https://github.com/lealvjo/web_scraping
+     - https://github.com/lealvjo/scraping_games
 
 #Importing the project and creat virtual environment project Pycharm
 
