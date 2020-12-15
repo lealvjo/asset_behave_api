@@ -35,4 +35,7 @@ steps:
 
   displayName: 'Run tests'
 
-  
+- task: PublishTestResults@1
+  inputs:
+    testResultsFiles: 'app_b/features/reports/*.xml'
+  condition: succeededOrFailed()
