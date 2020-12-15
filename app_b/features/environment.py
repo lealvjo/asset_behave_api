@@ -5,4 +5,4 @@ def before_all(context):
     context.stage = context.env.get_stage(context.config.userdata['STAGE'])
 
 def after_all(context):
-    print("report {} reports\n".format(context.env.get_path("features")))
+    print("report {}reports\n".format(context.env.get_path("features")))
