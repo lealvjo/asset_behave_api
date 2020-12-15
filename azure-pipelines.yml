@@ -26,12 +26,13 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    behave /app_b/features/
+    ls
+    behave app_b/features/
   
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '/app_b/features/reports/TESTS-*.xml'
+    testResultsFiles: 'app_b/features/reports/TESTS-*.xml'
   condition: succeededOrFailed()
