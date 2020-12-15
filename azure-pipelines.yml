@@ -24,7 +24,6 @@ steps:
     pip install wheel
     python setup.py bdist_wheel
     pip install pytest
-    ls
     pip install --upgrade --force-reinstall dist/asset_behave_api-1.1.0-py3-none-any.whl
     
   displayName: 'Install dependencies'
@@ -32,7 +31,7 @@ steps:
 - script: |
     cd /opt/hostedtoolcache/Python/
     asset_behave_api
-    pytest --junitxml= '/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/app_b/features/reports/TESTS-*.xml'
+    pytest --junitxml= '*/reports/TESTS-*.xml'
     ls
   
   displayName: 'Run tests'
@@ -42,17 +41,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '/opt/hostedtoolcache/Python/*TEST-*.xml' 
+    testResultsFiles: '*/reports/TESTS-*.xml'
     #testResultsFiles: '/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/app_b/features/reports/TESTS-*.xml'
   condition: succeededOrFailed()
-
-#inputs:
-    #testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest
-    #testResultsFiles: '**/TEST-*.xml' 
-    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
-    #mergeTestResults: false # Optional
-    #failTaskOnFailedTests: false # Optional
-    #testRunTitle: # Optional
-    #buildPlatform: # Optional
-    #buildConfiguration: # Optional
-    #publishRunAttachments: true # Optional
