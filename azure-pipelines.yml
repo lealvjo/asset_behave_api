@@ -25,4 +25,5 @@ steps:
     python -m pip install --upgrade pip
     pip install wheel
     pip install -r requirements.txt
+    echo path
   displayName: 'Install dependencies'
