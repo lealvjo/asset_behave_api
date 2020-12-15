@@ -5,6 +5,7 @@ Example of how to automate API, using python and behavior-oriented development (
      - https://behave.readthedocs.io/en/latest/
 
 ##Importing the project and creat virtual environment project Pycharm
+
     import the project into git: https://github.com/lealvjo/asset_behave_api.git
     
     - [x] Open the project in pycharm
@@ -25,7 +26,8 @@ Example of how to automate API, using python and behavior-oriented development (
         Ex: (venv) C:\Users\{user}\PycharmProjects\asset_behave_api\
 
 ##Environment  definitions
-    *** The environments are configured in the folder features/stage
+
+    The environments are configured in the folder features/stage
         - environment.yml
     
     *** behave.ini and the test parameterization file.
@@ -56,6 +58,7 @@ Example of how to automate API, using python and behavior-oriented development (
     
     
 ##To generate a new installable package setup.py
+
     Setup.py is a python file, which usually informs you that the module / package you are about to install has been packaged and distributed with Distutils, 
     which is the standard for distributing Python modules. This allows you to easily install Python packages.
     
