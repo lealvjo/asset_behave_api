@@ -1,5 +1,5 @@
 import requests
-from behave import given, when, then, step
+from behave import given
 
 @given(u'faca post de um novo jogo no endpoint "{endpoint}"')
 def step_impl(context, endpoint):
