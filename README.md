@@ -28,6 +28,19 @@ Example of how to automate API, using python and behavior-oriented development (
     **After this will appear a (venv) before your project, it means that the virtual environment has been enabled**
         Ex: (venv) C:\Users\{user}\PycharmProjects\asset_behave_api\
 
+#Installing external packages
+
+    Text file, containing a list of items / packages to be installed during pip install.
+
+    - [x] Open a terminal at the root where the requirements.txt file is located
+    - [x] Type: pip install -r requirements.txt
+    
+    To check what has been installed
+    
+    - [x] Type: pip list
+    
+    ***The application is at the root /app_b
+
 #Running behavior-oriented tests (BDD)
 
     - [x] Open a terminal in pycharm in your root folder
@@ -57,21 +70,7 @@ Example of how to automate API, using python and behavior-oriented development (
     QA: Wheel pointing to test environment
  
     behave.ini and equivalent to classRunner() of java  :)
-
-#Installing external packages
-
-    Text file, containing a list of items / packages to be installed during pip install.
-
-    - [x] Open a terminal at the root where the requirements.txt file is located
-    - [x] Type: pip install -r requirements.txt
-    
-    To check what has been installed
-    
-    - [x] Type: pip list
-    
-    ***The application is at the root /app_b
-    
-    
+ 
 #To generate a new installable package setup.py
 
     Setup.py is a python file, which usually informs you that the module / package you are about to install has been packaged and distributed with Distutils, 
