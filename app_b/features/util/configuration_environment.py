@@ -21,8 +21,12 @@ class ConfigurationEnvironment(object):
         validate(b , schema)
 
     def get_path(self, f):
+        if "\\" in dirname(abspath(__file__)):
+            t = "\\"
+        else:
+            t = "/"
         path = ""
-        root = [r + "/" for r in dirname(abspath(__file__)).split("\\")]
+        root = [r + "/" for r in dirname(abspath(__file__)).split(t)]
         for r in root:
             if f in r:
                 path += r
