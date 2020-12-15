@@ -26,7 +26,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    ls
     cd app_b/features/
     behave
   
@@ -35,5 +34,5 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**TESTS-*.xml'
+    testResultsFiles: '**/TESTS-*.xml'
   condition: succeededOrFailed()
