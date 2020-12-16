@@ -15,10 +15,10 @@ class ConfigurationEnvironment(object):
                 print(exc)
         return self.env['environment'][stage]
 
-    def get_schema(self, schema_file, b):
+    def get_schema(self, schema_file, body):
         with open(self.get_path('features') + "schema/" + schema_file, "r") as fp:
             schema = json.load(fp)
-        validate(b , schema)
+        validate(body, schema)
 
     def get_path(self, f):
         if "\\" in dirname(abspath(__file__)):

@@ -1,8 +1,8 @@
 import requests
 import time
-from behave import then
+from behave import then, When
 
-@then(u'faca um post excluindo o jogo no endpoint "{endpoint}"')
+@when(u'faco um post excluindo o jogo no endpoint "{endpoint}"')
 def step_impl(context, endpoint):
     time.sleep(30)
     context.body = requests.delete(context.stage + endpoint + str(context.body['id']))

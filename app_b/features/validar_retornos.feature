@@ -1,7 +1,8 @@
 #language: pt
 
-@teste1
-Funcionalidade: Excluindo um jogo
+@teste2
+Funcionalidade: Validar se o retorno do jogo e igual que foi enviado
+
     Contexto:
         Dado faca post de um novo jogo
         E o atributo "page_indx" possuir o valor "11"
@@ -13,7 +14,11 @@ Funcionalidade: Excluindo um jogo
         Entao deve me retornar o status code "201"
         E deve me retornar um body do jogo adicionado
 
-    Cenario: Deve realizar a exclusao do jogo enviado
-        Quando faco um post excluindo o jogo no endpoint "/game/"
+    Cenario: Validar os campos do body do jogo
+        Dado faca get do jogo no endpoint "/game/"
         Entao deve me retornar o status code "200"
-        E deve retornar um body com a mensagem "game is no longer alive"
+        E o campo "page_indx" deve ser igual ao valor "11"
+        E o campo "name" deve ser igual ao valor "CyberPunk 2077"
+        E o campo "price" deve ser igual ao valor "R$ 200,00"
+        E o campo "game_link" deve ser igual ao valor "http://teste"
+        E o campo "game_pht" deve ser igual ao valor "http://teste"
