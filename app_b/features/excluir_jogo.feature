@@ -11,7 +11,6 @@ Funcionalidade: Excluindo um jogo
         E o atributo "game_pht" possuir o valor "http://teste"
         Quando eu enviar no endpoint "/game"
         Entao deve me retornar o status code "201"
-        E deve me retornar um body do jogo adicionado
 
     Cenario: Deve realizar a exclusao do jogo enviado
         Quando faco um post excluindo o jogo no endpoint "/game/"

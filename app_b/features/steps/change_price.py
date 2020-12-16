@@ -8,6 +8,6 @@ def step_impl(context):
 
 @when(u'eu alterar e enviar no endpoint "{endpoint}"')
 def step_impl(context, endpoint):
-    context.body = requests.put(context.stage + endpoint + str(context.body['id']),
+    context.body = requests.put(context.stage + endpoint + str(context.body.json()['id']),
                                 json=context.obj_game.get_body_game())
 

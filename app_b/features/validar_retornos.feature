@@ -1,6 +1,6 @@
 #language: pt
 
-@teste2
+@teste1
 Funcionalidade: Validar se o retorno do jogo e igual que foi enviado
 
     Contexto:
@@ -12,7 +12,6 @@ Funcionalidade: Validar se o retorno do jogo e igual que foi enviado
         E o atributo "game_pht" possuir o valor "http://teste"
         Quando eu enviar no endpoint "/game"
         Entao deve me retornar o status code "201"
-        E deve me retornar um body do jogo adicionado
 
     Cenario: Validar os campos do body do jogo
         Dado faca get do jogo no endpoint "/game/"

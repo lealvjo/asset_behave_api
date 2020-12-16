@@ -3,7 +3,7 @@ from behave import given, then
 
 @given(u'faca get do jogo no endpoint "{endpoint}"')
 def step_impl(context, endpoint):
-    context.body = requests.get(context.stage + endpoint + str(context.body['id']))
+    context.body = requests.get(context.stage + endpoint + str(context.body.json()['id']))
 
 @then(u'deve me retornar o status code "{status_code}"')
 def step_impl(context, status_code):

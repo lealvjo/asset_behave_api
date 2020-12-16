@@ -13,11 +13,6 @@ def step_impl(context, field, value):
     context.obj_game.set_field_game(field, value)
 
 
-@then(u'deve me retornar um body do jogo adicionado')
-def step_impl(context):
-    context.body = context.body.json()
-
-
 @when(u'eu enviar no endpoint "{endpoint}"')
 def step_impl(context, endpoint):
     context.body = requests.post(context.stage + endpoint, json=context.obj_game.get_body_game())

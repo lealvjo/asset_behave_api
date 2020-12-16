@@ -12,7 +12,6 @@ Funcionalidade: Alterar o preço de um jogo enviado a loja
       E o atributo "game_pht" possuir o valor "http://teste"
       Quando eu enviar no endpoint "/game"
       Entao deve me retornar o status code "201"
-      E deve me retornar um body do jogo adicionado
 
     Cenario: Deve realizar alteracao do preco do jogo
       Dado que altere o preco do jogo enviado
