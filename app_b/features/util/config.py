@@ -1,9 +1,7 @@
 import yaml
-import json
 from os.path import dirname, abspath
-from jsonschema import validate
 
-class ConfigurationEnvironment(object):
+class Config(object):
     def __init__(self):
         pass
 
@@ -14,11 +12,6 @@ class ConfigurationEnvironment(object):
             except yaml.YAMLError as exc:
                 print(exc)
         return self.env['environment'][stage]
-
-    def get_schema(self, schema_file, body):
-        with open(self.get_path('features') + "schema/" + schema_file, "r") as fp:
-            schema = json.load(fp)
-        validate(body, schema)
 
     def get_path(self, f):
         if "\\" in dirname(abspath(__file__)):

@@ -3,11 +3,11 @@ This method is called only when generated the package by setup.py
 '''
 
 import os
-from app_b.features.util.configuration_environment import ConfigurationEnvironment as ce
+from app_b.features.util.config import Config
 
 
 def main():
-    env = ce()
+    env = Config()
     os.chdir(env.get_path("features"))
     os.system("behave")
 

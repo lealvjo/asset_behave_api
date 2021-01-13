@@ -1,4 +1,4 @@
-class CreateGame(object):
+class Game(object):
     def __init__(self):
         self.__game = {}
 

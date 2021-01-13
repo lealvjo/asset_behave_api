@@ -1,7 +1,9 @@
-from util.configuration_environment import ConfigurationEnvironment as ce
+from app_b.features.util.config import Config
+from app_b.features.services.test_support import TestSupport
 
 def before_all(context):
-    context.env = ce()
+    context.support = TestSupport()
+    context.env = Config()
     context.stage = context.env.get_stage(context.config.userdata['STAGE'])
 
 def after_all(context):

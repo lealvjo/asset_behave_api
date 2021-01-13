@@ -1,11 +1,11 @@
 import requests
 from behave import given, when, then
-from game.create_game import CreateGame
+from pojo.game import Game
 
 
 @given(u'faca post de um novo jogo')
 def step_impl(context):
-    context.obj_game = CreateGame()
+    context.obj_game = Game()
 
 
 @given(u'o atributo "{field}" possuir o valor "{value}"')
