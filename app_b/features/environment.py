@@ -1,5 +1,5 @@
-from app_b.features.util.config import Config
-from app_b.features.services.test_support import TestSupport
+from util.config import Config
+from services.test_support import TestSupport
 
 def before_all(context):
     context.support = TestSupport()

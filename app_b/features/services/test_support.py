@@ -1,5 +1,5 @@
 import json
-from app_b.features.util.config import Config
+from util.config import Config
 from jsonschema import validate
 
 class TestSupport(Config):
