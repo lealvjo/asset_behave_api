@@ -1,6 +1,6 @@
 #language: pt
 
-@teste1
+@rerun
 Funcionalidade: Validar se o retorno do jogo e igual que foi enviado
 
     Contexto:
@@ -10,11 +10,11 @@ Funcionalidade: Validar se o retorno do jogo e igual que foi enviado
         E o atributo "price" possuir o valor "R$ 200,00"
         E o atributo "game_link" possuir o valor "http://teste"
         E o atributo "game_pht" possuir o valor "http://teste"
-        Quando eu enviar no endpoint "/game"
+        Quando eu enviar no endpoint "python/game"
         Entao deve me retornar o status code "201"
 
     Cenario: Validar os campos do body do jogo
-        Dado faca get do jogo no endpoint "/game/"
+        Dado faca get do jogo no endpoint "python/game/"
         Entao deve me retornar o status code "200"
         E o campo "page_indx" deve ser igual ao valor "11"
         E o campo "name" deve ser igual ao valor "CyberPunk 2077"

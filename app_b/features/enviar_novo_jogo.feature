@@ -1,6 +1,6 @@
 #language: pt
 
-@teste1
+@rerun
 Funcionalidade: Enviar um novo jogo a loja
 
     Cenario: Deve realizar a inclusao de novos jogos
@@ -10,7 +10,7 @@ Funcionalidade: Enviar um novo jogo a loja
         E o atributo "price" possuir o valor "R$ 200,00"
         E o atributo "game_link" possuir o valor "http://teste"
         E o atributo "game_pht" possuir o valor "http://teste"
-        Quando eu enviar no endpoint "/game"
+        Quando eu enviar no endpoint "python/game"
         Entao deve me retornar o status code "201"
 
     Cenario: Deve realizar a inclusao somente se ele possuir um nome
@@ -19,5 +19,5 @@ Funcionalidade: Enviar um novo jogo a loja
         E o atributo "price" possuir o valor "R$ 200,00"
         E o atributo "game_link" possuir o valor "http://teste"
         E o atributo "game_pht" possuir o valor "http://teste"
-        Quando eu enviar no endpoint "/game"
+        Quando eu enviar no endpoint "python/game"
         Entao deve me retornar o status code "500"
