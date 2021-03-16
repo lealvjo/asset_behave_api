@@ -88,7 +88,7 @@ Example of how to automate API, using python and behavior-oriented development (
 
     If installed in any environment to run by calling entry_points.
     
-    - [x] In the terminal type: {asset_behave_api} and press enter
+    - [x] In the terminal type: {asset_behave_api_run} and press enter
     
     
 

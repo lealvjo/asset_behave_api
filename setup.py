@@ -23,7 +23,7 @@ setup(
     install_requires=get_extra_requires(join(ROOT, "requirements.txt")),
     entry_points={
         "console_scripts": [
-            "asset_behave_api=app_b.main:main"
+            "asset_behave_api_run=app_b.main:main"
         ]},
     package_data={'' : [join(ROOT, 'app_b/features/*.feature'),
         join(ROOT, 'app_b/features/schema/data_order.json')
