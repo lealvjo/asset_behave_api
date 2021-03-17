@@ -1,12 +1,12 @@
 # asset_behave_api
 Example of how to automate API, using python and behavior-oriented development (BDD)
      
--[x] Framework documentation:
+Framework documentation:
      
     
         - https://behave.readthedocs.io/en/latest/
 
--[x] Application Programming Interface used for testing
+Application Programming Interface used for testing
     
         
         - https://github.com/lealvjo/scraping_games
