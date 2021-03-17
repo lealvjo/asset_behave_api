@@ -11,7 +11,7 @@ Example of how to automate API, using python and behavior-oriented development (
         
         - https://github.com/lealvjo/scraping_games
 
-#Importing the project and creat virtual environment project Pycharm
+# Importing the project and creat virtual environment project Pycharm
 
 import the project into git: https://github.com/lealvjo/asset_behave_api.git
     
@@ -20,7 +20,7 @@ import the project into git: https://github.com/lealvjo/asset_behave_api.git
 - [x] Navigate to python interpreter and click on the gear
 - [x] Select add and new environment
     
-#Enabling virtual environment
+# Enabling virtual environment
     
 A virtual environment is a Python environment, so the Python interpreter, libraries and scripts 
 installed in it are isolated from those installed in other virtual environments.
@@ -33,7 +33,7 @@ installed in it are isolated from those installed in other virtual environments.
     After this will appear a (venv) before your project, it means that the virtual environment has been enabled**
         Ex: (venv) C:\Users\{user}\PycharmProjects\asset_behave_api\
 
-#Installing external packages
+# Installing external packages
 
 Text file, containing a list of items / packages to be installed during pip install.
 
@@ -48,7 +48,7 @@ Text file, containing a list of items / packages to be installed during pip inst
 
     The application is at the root /app_b
 
-#Running behavior-oriented tests (BDD)
+# Running behavior-oriented tests (BDD)
 
 - [x] Open a terminal in pycharm in your root folder
 - [x] And type: cd app_b\features\
@@ -60,7 +60,7 @@ Text file, containing a list of items / packages to be installed during pip inst
 
     He and the equivalent of the mvn test of the maven :)
 
-#Environment definitions behave.ini
+# Environment definitions behave.ini
 
     The environments are configured in the folder features/stage
         - environment.yml
@@ -79,7 +79,7 @@ Text file, containing a list of items / packages to be installed during pip inst
  
     behave.ini and equivalent to classRunner() of java  :)
  
-#To generate a new installable package setup.py
+# To generate a new installable package setup.py
 
 Setup.py is a python file, which usually informs you that the module / package you are about to install has been packaged and distributed with Distutils, 
 which is the standard for distributing Python modules. This allows you to easily install Python packages.
@@ -92,7 +92,7 @@ which is the standard for distributing Python modules. This allows you to easily
 - [x] type: pip install --upgrade --force-reinstall dist/asset_behave_api-{version}-py3-none-any.whl
     
 
-#To run the project installed
+# To run the project installed
 
 If installed in any environment to run by calling entry_points.
     
